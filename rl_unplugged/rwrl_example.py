@@ -18,7 +18,7 @@ Instructions:
 > export TMP_PATH=/tmp/dataset/rwrl
 > export DATA_PATH=combined_challenge_easy/quadruped/walk/offline_rl_challenge_easy
 > mkdir -p $TMP_PATH/$DATA_PATH
-> gsutil cp gs://rl_unplugged/rwrl/$DATA_PATH/episodes.tfrecord-00001-of-00015 \
+> gcloud storage cp gs://rl_unplugged/rwrl/$DATA_PATH/episodes.tfrecord-00001-of-00015 \
 $TMP_PATH/$DATA_PATH/episodes.tfrecord-00000-of-00001
 > python rwrl_example.py --path=$TMP_PATH
 """

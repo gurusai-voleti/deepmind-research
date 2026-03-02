@@ -15,7 +15,7 @@ r"""Atari dataset example.
 
 Instructions:
 > mkdir -p /tmp/dataset/Asterix
-> gsutil cp gs://rl_unplugged/atari/Asterix/run_1-00000-of-00100 \
+> gcloud storage cp gs://rl_unplugged/atari/Asterix/run_1-00000-of-00100 \
     /tmp/dataset/Asterix/run_1-00000-of-00001
 > python atari_example.py --path=/tmp/dataset --game=Asterix
 """

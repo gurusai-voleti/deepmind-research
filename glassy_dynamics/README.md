@@ -39,7 +39,7 @@ The interaction coefficients are set for a typical Kob-Andersen configuration.
 
 The dataset (and model checkpoints) can be downloaded using [gsutil](https://cloud.google.com/storage/docs/downloading-objects).
 To download the entire GCP bucket (~100GB) use:
-> gsutil -m cp -R gs://deepmind-research-glassy-dynamics .
+> gcloud storage cp --recursive gs://deepmind-research-glassy-dynamics .
 
 
 
@@ -87,4 +87,3 @@ S. S. Schoenholz, A. Obika, A. W. R. Nelson, T. Back, D. Hassabis and P. Kohli
 
 ## Disclaimer
 This is not an official Google product.
-

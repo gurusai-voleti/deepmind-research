@@ -18,7 +18,7 @@ Instructions:
 > export TMP_PATH=/tmp/dataset
 > export TASK_NAME=humanoid_run
 > mkdir -p $TMP_PATH/$TASK_NAME
-> gsutil cp gs://rl_unplugged/dm_control_suite/$TASK_NAME/train-00000-of-00100 \
+> gcloud storage cp gs://rl_unplugged/dm_control_suite/$TASK_NAME/train-00000-of-00100 \
 $TMP_PATH/dm_control_suite/$TASK_NAME/train-00000-of-00001
 > python dm_control_suite_example.py --path=$TMP_PATH \
 --task_class=control_suite --task_name=$TASK_NAME
